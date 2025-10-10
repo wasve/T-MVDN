@@ -83,7 +83,7 @@ def main(args):
     elif policy_class == 'CNNMLP':
         policy_config = {'lr': args['lr'], 'lr_backbone': lr_backbone, 'backbone' : backbone, 'num_queries': 1,
                          'camera_names': camera_names,}
-    elif policy_class == 'CUSTOM':
+    elif policy_class == 'TMVDN':
         enc_layers = 4
         dec_layers = 7
         nheads = 8
