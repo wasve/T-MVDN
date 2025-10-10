@@ -17,7 +17,7 @@ from PyQt5.QtGui import QIcon
 # from matplotlib import pyplot3 as plt
 from spatialmath import SE3
 from wandb.old.summary import h5py
-import cv2 as cv3
+import cv2 as cv
 import sim
 import random
 from MainWindow import Ui_Form
