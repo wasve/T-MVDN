@@ -1,0 +1,14 @@
+mujoco/
+dataset/
+.idea/
+__pycache__/
+*.ckpt
+mujoco_menagerie-main.zip
+mujoco_menagerie-main/
+*.hdf5
+*.mp4
+assets/
+video/
+*.txt
+HardWare/
+*.m
