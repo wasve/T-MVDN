@@ -349,15 +349,15 @@ class InterFace(QWidget):
 
     def add_rocks(self):
 
-        for ii in range(4):
+        for ii in range(5):
             add_rock_objects(self.client,
                              "block",
                              ii,
                              4,
-                             fr"rock\auto_rock_{random.randint(1, 10)}_",
+                             fr"E:\doctor\teaching_graps\submit\TMVDN_Breaking\sim\rock\auto_rock_{random.randint(1, 10)}_",
                              _pos=[0.1, np.random.uniform(-0.2, 0.2), 0.4],
                              _orient=[0.0, 0.0, 0.0],
-                             _color=[152 / 255, 160 / 255, 169 / 255],
+                             _color=[80 / 255, 90 / 255, 85 / 255],
                              _scale=random.uniform(0.04, 0.045))
             time.sleep(2)
 

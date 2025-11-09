@@ -29,7 +29,7 @@ class ACTPolicy(nn.Module):
 
             # 模型计算出的 action (8, 100, 14) & (8, 100, 1)
             a_hat, is_pad_hat, (mu, logvar) = self.model(qpos, image, env_state, actions, is_pad)
-            # kld 不知道为啥
+
             total_kld, dim_wise_kld, mean_kld = kl_divergence(mu, logvar)
             loss_dict = dict()
             # actions 与 a_hat 的l1损失
@@ -71,7 +71,6 @@ class TMVDNPolicy(nn.Module):
 
             # 模型计算出的 action (8, 100, 14) & (8, 100, 1)
             a_hat, is_pad_hat, (mu, logvar) = self.model(qpos, image, depth, env_state, actions, is_pad)
-            # kld 不知道为啥
             total_kld, dim_wise_kld, mean_kld = kl_divergence(mu, logvar)
             loss_dict = dict()
             # actions 与 a_hat 的l1损失
